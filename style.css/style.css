@@ -1,0 +1,138 @@
+.navbar{
+    background: var(--white-fixed);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    border-bottom: solid 1px var(--grey4);
+}
+.menu-lines{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    border-radius: 4px;
+}
+.line{
+    border-radius: 5px;
+    background: var(--grey4);
+    height: 2px;
+    width: 10px;
+}
+.ul-menu-bar{
+    list-style: none;
+   
+}
+.li-menu-bar{
+    color: var(--grey3);
+}
+.li-menu-bar2{
+    color: var(--grey0);
+}
+.li-menu-bar3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.padding1{
+    padding: 20px 20px;
+}
+.li-background{
+    background: var(--grey5);
+}
+.menu-input1{
+    width: 90%;
+    height: 27px;
+    background: var(--grey5);
+    border: none;
+    border-radius: 8px;
+}
+.img-search{
+ height: 27px;
+ border-radius: 8px;
+}
+.li-menu-bar4{
+    display: flex;
+    border-radius: 8px;
+    background: var(--grey5);
+}
+.menu-input1:focus{
+    border: none;
+    outline: none !important;
+}
+.ul-border{
+    border-bottom: solid 1px var(--grey5);
+}
+.ul-menu-2{
+    margin: 15px 15px;
+}
+.menu{
+    display: none;
+}
+.close-menu{
+    display: none;
+    color: var(--grey7);
+    font-size: large;
+    cursor: pointer;
+}
+.ul-menu-desktop{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.li-menu-desktop{
+    font-weight: 600;
+}
+.div-menu-all-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 65px;
+    border-bottom: solid 1px var(--grey5);
+}
+.nav-desktop{
+    display: none;
+}
+.div-menu-desktop{
+    display: flex;
+    gap: 15px;
+}
+.search-desktop{
+    margin-top: 5px;
+    display: flex;
+    background-color: var(--grey5);
+    border-radius: 8px;
+    height: max-content;
+}
+
+@media(min-width:869px){
+    .menu-lines{
+        display: none;
+    }.menu{
+        display: none;
+    }.navbar{
+        display: none; 
+    }.nav-desktop{
+        display: flex;
+    }
+}
+@keyframes menu {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    
+  }
+
+.menu{
+    animation: menu 1s;  
+ }

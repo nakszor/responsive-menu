@@ -1,0 +1,20 @@
+:root{
+    --color-brand-1: #364FC7;
+    --grey1:#212529;
+    --grey2:#495057;
+    --grey3:#868E96;
+    --grey4: #DEE2E6;
+    --grey5:#F1F3F5;
+    --grey6: #F8F9FA;
+    --grey7:#ADB5BD;
+    --white-fixed: #FFFFFF;
+}
+*{
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.title1{
+    color: var(--color-brand-1);
+}
